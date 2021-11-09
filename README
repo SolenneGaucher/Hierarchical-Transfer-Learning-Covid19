@@ -1,0 +1,15 @@
+This repository contains the codes used to obtain the results presented in Section 4 of ...
+
+To reproduct the results, one needs to first download the google mobility data in csv form for the region "France" on https://www.gstatic.com/covid19/mobility
+
+The preprocessing is done using the files "Preprocessing_first_part.R" (which aggregates the data from the different sources), then using the file "Preprocessing_second_part.R"
+(which detects outlier data in regional consumption and attributes them a weight equal to 0).
+
+Then, the regional and national GAM are computed using the file "compute_GAM.R".
+
+The staked GAM and RF (individual and commons) are computed using the file "Stacked_RF.R"
+
+The aggregation is performed using the file "Aggregation.R"
+
+The remainder of the files are used to produce the analyses presented Section 4. The file "ALE" produces the ALE plots of the differents variables. The file 
+"RF_importance.R" computes the importance of the different variables. The file "Variable_Selection.R" compares the different variable selections methods.
