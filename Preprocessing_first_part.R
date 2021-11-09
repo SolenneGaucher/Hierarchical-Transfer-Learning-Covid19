@@ -24,7 +24,7 @@ Data_Oxford_Tracker <- filter(Data_Oxford_Tracker, Pays == 'France')
 Data_Oxford_Tracker$DateD <- dmy(Data_Oxford_Tracker$Date)
 
 # Load regional data
-Data_reg <- readRDS("Data_Data_regional_05102020.RDS")
+Data_reg <- rbind(readRDS("Data_regional_1.RDS"), readRDS("Data_regional_2.RDS"), readRDS("Data_regional_3.RDS"))
 Data_reg <- filter(Data_reg, Date < ymd("2020-09-18"))
 Data_reg <- filter(Data_reg, Date > 
                      as.POSIXct(strptime("2013-01-01 00:00:00", "%Y-%m-%d %H:%M:%S", tz = "UTC")))
