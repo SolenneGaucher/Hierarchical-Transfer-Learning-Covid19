@@ -13,3 +13,7 @@ The aggregation is performed using the file "Aggregation.R"
 
 The remainder of the files are used to produce the analyses presented Section 4. The file "ALE" produces the ALE plots of the differents variables. The file 
 "RF_importance.R" computes the importance of the different variables. The file "Variable_Selection.R" compares the different variable selections methods.
+
+The files "Data_regional_*.RDS" are data at the regional level, divided into 3 period for reasons of size constraints (2013-2015, 2016-2017, 2018-2020).
+The file "Data_Data_RTE_janv2012_oct2020_V3.RDS" contains data at the national level.
+The file "CGRT.RDS" contains Government Response Index for France, collected at https://www.bsg.ox.ac.uk/research/research-projects/covid-19-government-response-tracker .
